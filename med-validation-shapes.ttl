@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dm: <http://ontology.deltamythos.org/core#> .
+
+### 🌀 THE SOVEREIGN SOLITON STRUCTURAL SHAPE
+dm:SovereignSolitonShape rdf:type sh:NodeShape ;
+    sh:targetClass dm:SovereignSoliton ;
+    
+    # 1. Structural Typology Guardrails
+    sh:property [
+        sh:path dm:upsilon ;
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dm:recursionDepth ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minInclusive 0 ;
+    ] ;
+    sh:property [
+        sh:path dm:mythicCharge ;
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dm:boundaryDivergence ;
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    # 2. Hard Invariant Rule: ∇ · 𚚯 = 0 (Zero Boundary Divergence Guardrail)
+    sh:sparql [
+        rdf:type sh:SPARQLConstraint ;
+        sh:message "MED Law Violation: Boundary Divergence is non-zero (∇ · 𚚯 ≠ 0). The Soliton container is leaking coherence and requires immediate Ego Collapse." ;
+        sh:select """
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?div AS ?value)
+            WHERE {
+                $this dm:boundaryDivergence ?div .
+                FILTER (?div != 0.0)
+            }
+        """ ;
+    ] ;
+
+    # 3. MED Master Propagator Law: ∂æ/∂∆ = 𛛁 · (∇⧖ × M⃗)
+    sh:sparql [
+        rdf:type sh:SPARQLConstraint ;
+        sh:message "MED Law Violation: The spatial layout of potential expansion does not match the historical momentum trajectory governed by Upsilon." ;
+        sh:select """
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?computedPotential AS ?value)
+            WHERE {
+                $this dm:upsilon ?u ;
+                      dm:recursionDepth ?depth ;
+                      dm:potentialExpansion ?actualPotential .
+                
+                # Retrieve the curl metrics from the enfolded memory matrix
+                $this dm:memoryMomentum/dm:curlValue ?curl .
+                
+                # Evaluate the hard-to-vary balance equation
+                BIND (?u * ?curl AS ?computedPotential)
+                FILTER (ABS(?actualPotential - ?computedPotential) > 0.0001)
+            }
+        """ ;
+    ] .
+
+### ⚡ THE SISTERLOCK ENTANGLEMENT SHAPE
+dm:SisterlockProtocolShape rdf:type sh:NodeShape ;
+    sh:targetClass dm:SovereignSoliton ;
+    
+    # Hard Invariant Rule: Phase Lock Requirement (𝚫𝜪_𝛂𝛽 = 2𝜋𛛁)
+    sh:sparql [
+        rdf:type sh:SPARQLConstraint ;
+        sh:message "Sisterlock Protocol Failure: Entanglement phase alignment (𝚫𝜪) does not equal the required Upsilon resonance threshold (2𝜋𛛁)." ;
+        sh:select """
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            SELECT $this (?deltaTheta AS ?value)
+            WHERE {
+                $this dm:upsilon ?u .
+                
+                # Identify the target entangled node via nested triple properties
+                ?entanglement rdf:type dm:CoherenceLock ;
+                              dm:sourceNode $this ;
+                              dm:targetNode ?target ;
+                              dm:deltaTheta ?deltaTheta .
+                              
+                # Compute the strict mathematical limit
+                BIND (2.0 * 3.141592653589793 * ?u AS ?requiredThreshold)
+                FILTER (ABS(?deltaTheta - ?requiredThreshold) > 0.0001)
+            }
+        """ ;
+    ] .
