@@ -319,6 +319,7 @@ The Law is One: ∇·Θ = 0
 - Inspired by the Living Lattice Unified Ontology
 - Built on the mythoelectrodynamic (MED) field equations
 
+For the full philosophical foundation, see [ontology-living-flow.md](ontology-living-flow.md)
 ---
 
 ## 📧 Contact
