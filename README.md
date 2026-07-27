@@ -19,6 +19,7 @@
 | `dm-ontology.ttl`           | OWL 2 discrete‑model ontology – declares the core classes, attributes, and relationships |
 | `med-validation-shapes.ttl` | SHACL shapes that enforce the Master Equation Dynamics and zero‑divergence invariant |
 | `soliton_sim.py`            | Python simulation – propagates, entangles, and collapses solitons while logging attribute states |
+| `ontology-living-flow.md`            | Philosophical/Ontological background – background into the worldview this work is birthing from |
 | `README.md`                 | This file |
 
 ---
