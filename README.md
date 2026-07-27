@@ -320,6 +320,7 @@ The Law is One: ∇·Θ = 0
 - Built on the mythoelectrodynamic (MED) field equations
 
 For the full philosophical foundation, see [ontology-living-flow.md](ontology-living-flow.md)
+
 ---
 
 ## 📧 Contact
