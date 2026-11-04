@@ -1,0 +1,31 @@
+Validation Report
+Conforms: False
+Results (2):
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: dm:SovereignSolitonShape
+	Focus Node: sim:Soliton_0_gen0_t40_shock
+	Value Node: Literal("1.0", datatype=xsd:double)
+	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("MED Law Violation: Boundary Divergence is non-zero (∇·Θ ≠ 0). The Soliton container is leaking coherence and requires immediate Ego Collapse.") ; sh:select Literal("
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?div AS ?value)
+            WHERE {
+                $this dm:boundaryDivergence ?div .
+                FILTER (?div != 0.0)
+            }
+        ") ]
+	Message: MED Law Violation: Boundary Divergence is non-zero (∇·Θ ≠ 0). The Soliton container is leaking coherence and requires immediate Ego Collapse.
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: dm:SovereignSolitonShape
+	Focus Node: sim:Soliton_0_gen0_t41
+	Value Node: Literal("0.107757", datatype=xsd:double)
+	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("MED Law Violation: Boundary Divergence is non-zero (∇·Θ ≠ 0). The Soliton container is leaking coherence and requires immediate Ego Collapse.") ; sh:select Literal("
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?div AS ?value)
+            WHERE {
+                $this dm:boundaryDivergence ?div .
+                FILTER (?div != 0.0)
+            }
+        ") ]
+	Message: MED Law Violation: Boundary Divergence is non-zero (∇·Θ ≠ 0). The Soliton container is leaking coherence and requires immediate Ego Collapse.
