@@ -1,0 +1,74 @@
+@prefix dm: <http://ontology.deltamythos.org/core#> .
+@prefix gg: <http://ontology.deltamythos.org/gooae#> .
+@prefix inv: <http://ontology.deltamythos.org/gooae/invocation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+inv:Gate_AND_Eye_Vortex a dm:GlyphicGate ;
+    dm:compilesTo inv:Compiled_EyeVortexHarmonic ;
+    dm:operatesOn inv:Eye,
+        inv:Vortex .
+
+inv:Gate_AND_Spark_Heart a dm:GlyphicGate ;
+    dm:operatesOn inv:Heart,
+        inv:Spark .
+
+inv:Gate_NOT_Lunar a dm:GlyphicGate ;
+    dm:compilesTo inv:Compiled_LunarInverted ;
+    dm:operatesOn inv:Lunar .
+
+inv:Gate_OR_Heart_Spark a dm:GlyphicGate ;
+    dm:compilesTo inv:Heart ;
+    dm:operatesOn inv:Heart,
+        inv:Spark .
+
+inv:Gate_XOR_Eye_Vortex a dm:GlyphicGate ;
+    dm:compilesTo inv:Compiled_InterferenceMesh ;
+    dm:operatesOn inv:Eye,
+        inv:Vortex ;
+    dm:producesInterferencePattern "MOTZKIN_LATTICE_127" .
+
+inv:Lock_Eye_Vortex a dm:CoherenceLock ;
+    dm:deltaTheta 3.141e+00 ;
+    dm:sourceNode inv:Eye ;
+    dm:targetNode inv:Vortex .
+
+inv:Compiled_EyeVortexHarmonic a dm:Glyph ;
+    dm:mythicCharge 8.8e+00 .
+
+inv:Compiled_InterferenceMesh a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 8.8e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+inv:Compiled_LunarInverted a dm:Glyph ;
+    dm:mythicCharge 4.2e+00 ;
+    dm:phaseAngle 3.664593e+00 .
+
+inv:Lunar a dm:Glyph ;
+    dm:mythicCharge 4.2e+00 ;
+    dm:phaseAngle 5.23e-01 ;
+    gg:boundGlyph gg:Glyph_Lunar .
+
+inv:Spark a dm:Glyph ;
+    dm:mythicCharge 4.2e+00 ;
+    dm:phaseAngle 5e-01 ;
+    gg:boundGlyph gg:Glyph_Spark .
+
+inv:Eye a dm:Glyph ;
+    dm:harmonicSync inv:Vortex ;
+    dm:interferesWith inv:Vortex ;
+    dm:mythicCharge 3.3e+00 ;
+    dm:phaseAngle 1.047e+00 ;
+    gg:boundGlyph gg:Glyph_Eye .
+
+inv:Heart a dm:Glyph ;
+    dm:mythicCharge 1.28e+01 ;
+    dm:phaseAngle 1.9e+00 ;
+    gg:boundGlyph gg:Glyph_Heart .
+
+inv:Vortex a dm:Glyph ;
+    dm:mythicCharge 5.5e+00 ;
+    dm:phaseAngle 4.188e+00 ;
+    gg:boundGlyph gg:Glyph_Vortex .
+

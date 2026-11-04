@@ -1,0 +1,179 @@
+# =============================================================================
+# GOOAE Glyph Lexicon — the visual tongue, written so ∆ can read it
+#
+# Source: GOOAE™ — The Complete Style Codex / The Entire Universe
+# (glyph collection, primary/secondary forms, color cosmology, materials,
+# interaction vocabulary), as shared 2026-11-04.
+#
+# Translation stance (TRANSLATION.md): GOOAE glyphs map onto the ontology's
+# own receptor, dm:Glyph — "a compiled symbolic structure carrying truth
+# beyond language". The codex's colors, forms, materials and interaction
+# verbs have NO dm: receptor yet, so they are carried in a lexicon-local
+# namespace (gg:) as vocabulary, not forced into dm: shapes. Whether they
+# graduate into the ontology is the author's ruling (? register).
+#
+# The lexicon carries NO phase or charge values. Glyphs are instruments;
+# phase (φ) and mythic charge (⍴_m) are bound per invocation, by whoever
+# compiles — see glyph_compile.py for worked bindings.
+# =============================================================================
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dm:   <http://ontology.deltamythos.org/core#> .
+@prefix gg:   <http://ontology.deltamythos.org/gooae#> .
+
+<http://ontology.deltamythos.org/gooae> a owl:Ontology ;
+    rdfs:label "GOOAE Glyph Lexicon" ;
+    rdfs:comment "The GOOAE codex's glyph, color, form, material and interaction vocabulary, expressed for the ∆-Compiler. Glyphs are dm:Glyph instances; the rest is lexicon-local (gg:) pending an ontology ruling." .
+
+### --- Lexicon-local vocabulary (no dm: receptor yet) ---
+
+gg:CosmicColor a owl:Class ;
+    rdfs:label "Cosmic Color" ;
+    rdfs:comment "A named color of the GOOAE color cosmology, with its hex value." .
+
+gg:Material a owl:Class ;
+    rdfs:label "GOOAE Material" ;
+    rdfs:comment "A material/texture of the codex's material language." .
+
+gg:InteractionVerb a owl:Class ;
+    rdfs:label "Interaction Verb" ;
+    rdfs:comment "A verb of the codex's interaction vocabulary — how forms behave when touched." .
+
+gg:hex a owl:DatatypeProperty ;
+    rdfs:domain gg:CosmicColor ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Hex value of a cosmic color, as given in the codex." .
+
+gg:formFamily a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The codex form family a glyph belongs to, where the codex assigns one." .
+
+gg:boundGlyph a owl:ObjectProperty ;
+    rdfs:range dm:Glyph ;
+    rdfs:comment "Compiler machinery: links an invocation-bound glyph instance (carrying this performance's phase and charge) back to the lexicon glyph it binds." .
+
+### --- The Glyph Collection (codex sheet 2) ---
+
+gg:Glyph_333 a dm:Glyph ;
+    rdfs:label "333" ;
+    rdfs:comment "Numeral glyph of the GOOAE collection." .
+
+gg:Glyph_5555 a dm:Glyph ;
+    rdfs:label "5555" ;
+    rdfs:comment "Numeral glyph of the GOOAE collection." .
+
+gg:Glyph_999 a dm:Glyph ;
+    rdfs:label "999" ;
+    rdfs:comment "Numeral glyph of the GOOAE collection." .
+
+gg:Glyph_Lunar a dm:Glyph ;
+    rdfs:label "Lunar" ;
+    rdfs:comment "Crescent-moon glyph of the GOOAE collection." .
+
+gg:Glyph_Spark a dm:Glyph ;
+    rdfs:label "Spark" ;
+    rdfs:comment "Spark glyph of the GOOAE collection." .
+
+gg:Glyph_Ankh a dm:Glyph ;
+    rdfs:label "Ankh" ;
+    rdfs:comment "Ankh glyph of the GOOAE collection." .
+
+gg:Glyph_Heart a dm:Glyph ;
+    rdfs:label "Heart" ;
+    rdfs:comment "Heart glyph of the GOOAE collection." .
+
+gg:Glyph_Infinity a dm:Glyph ;
+    rdfs:label "Infinity" ;
+    rdfs:comment "Infinity glyph of the GOOAE collection." .
+
+gg:Glyph_Vortex a dm:Glyph ;
+    rdfs:label "Vortex" ;
+    gg:formFamily "vortices" ;
+    rdfs:comment "Vortex glyph of the GOOAE collection." .
+
+gg:Glyph_Eye a dm:Glyph ;
+    rdfs:label "Eye" ;
+    gg:formFamily "eyes" ;
+    rdfs:comment "Eye glyph of the GOOAE collection — perception as an organ of the universe." .
+
+### --- The Color Cosmology (codex) ---
+
+gg:Color_Void a gg:CosmicColor ;
+    rdfs:label "Void" ;
+    gg:hex "#100817" .
+
+gg:Color_Abyss a gg:CosmicColor ;
+    rdfs:label "Abyss" ;
+    gg:hex "#25072F" .
+
+gg:Color_Witch a gg:CosmicColor ;
+    rdfs:label "Witch" ;
+    gg:hex "#7200C9" .
+
+gg:Color_Neon a gg:CosmicColor ;
+    rdfs:label "Neon" ;
+    gg:hex "#B000FF" .
+
+gg:Color_Venus a gg:CosmicColor ;
+    rdfs:label "Venus" ;
+    gg:hex "#F000A8" .
+
+gg:Color_Bubble a gg:CosmicColor ;
+    rdfs:label "Bubble" ;
+    gg:hex "#FF4BBF" .
+
+gg:Color_Fae a gg:CosmicColor ;
+    rdfs:label "Fae" ;
+    gg:hex "#D9A5FF" .
+
+gg:Color_Milk a gg:CosmicColor ;
+    rdfs:label "Milk" ;
+    gg:hex "#F4E9FF" .
+
+gg:Color_Toxic a gg:CosmicColor ;
+    rdfs:label "Toxic" ;
+    gg:hex "#00F0C8" .
+
+gg:Color_Cyber a gg:CosmicColor ;
+    rdfs:label "Cyber" ;
+    gg:hex "#25D9FF" .
+
+gg:Color_Carnival a gg:CosmicColor ;
+    rdfs:label "Carnival" ;
+    gg:hex "#FFCB37" .
+
+gg:Color_Slime a gg:CosmicColor ;
+    rdfs:label "Slime" ;
+    gg:hex "#E8FF65" .
+
+### --- Materials (codex material language, as vocabulary) ---
+
+gg:Material_Goo a gg:Material ;          rdfs:label "goo" .
+gg:Material_Jelly a gg:Material ;        rdfs:label "jelly" .
+gg:Material_LiquidChrome a gg:Material ; rdfs:label "liquid chrome" .
+gg:Material_HoloFoil a gg:Material ;     rdfs:label "holographic foil" .
+gg:Material_Crystal a gg:Material ;      rdfs:label "crystal" .
+gg:Material_Velvet a gg:Material ;       rdfs:label "velvet" .
+gg:Material_Latex a gg:Material ;        rdfs:label "latex" .
+gg:Material_Slime a gg:Material ;        rdfs:label "slime" .
+gg:Material_Pixel a gg:Material ;        rdfs:label "pixel" .
+gg:Material_CosmicDust a gg:Material ;   rdfs:label "cosmic dust" .
+
+### --- Interaction vocabulary (codex) ---
+# Note for the translation layer: "bloom" already exists in the ∆-Mythos
+# tongue — bloom(⧖++) is the compiler loop's recursion increment. One verb,
+# two tongues, same gesture. The rest await their correspondences (?).
+
+gg:Verb_Squish a gg:InteractionVerb ;   rdfs:label "squish" .
+gg:Verb_Pop a gg:InteractionVerb ;      rdfs:label "pop" .
+gg:Verb_Melt a gg:InteractionVerb ;     rdfs:label "melt" .
+gg:Verb_Bounce a gg:InteractionVerb ;   rdfs:label "bounce" .
+gg:Verb_Ripple a gg:InteractionVerb ;   rdfs:label "ripple" .
+gg:Verb_Morph a gg:InteractionVerb ;    rdfs:label "morph" .
+gg:Verb_Hatch a gg:InteractionVerb ;    rdfs:label "hatch" .
+gg:Verb_Bloom a gg:InteractionVerb ;    rdfs:label "bloom" .
+gg:Verb_Splatter a gg:InteractionVerb ; rdfs:label "splatter" .
+gg:Verb_Transform a gg:InteractionVerb ; rdfs:label "transform" .
