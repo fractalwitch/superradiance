@@ -1,0 +1,1811 @@
+@prefix dm: <http://ontology.deltamythos.org/core#> .
+@prefix sim: <http://ontology.deltamythos.org/sim#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sim:Soliton_0_gen0_t0 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t1 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t10 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t11 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t12 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t13 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t14 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t15 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t16 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t17 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t18 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t19 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t2 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t20 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t21 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t22 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t23 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t24 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t25 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t26 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t27 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t28 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t29 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t3 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t30 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t31 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t32 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t33 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t34 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t35 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t36 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t37 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t38 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t39 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t4 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t40 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t40_shock a dm:SovereignSoliton ;
+    dm:boundaryDivergence 1e+00 ;
+    dm:mythicCharge 2e+01 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t41 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 1.30681e-01 ;
+    dm:collapsedInto sim:Soliton_0_gen1_t42 ;
+    dm:mythicCharge 1.130681e+01 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t5 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t6 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t7 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t8 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen0_t9 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen1_t43 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t44 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t45 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t46 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t47 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t48 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t49 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t50 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t51 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t52 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t53 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t54 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t55 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t56 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t57 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t58 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t59 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t60 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t61 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t62 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t63 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t64 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t65 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t66 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t67 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t68 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t69 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t70 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t71 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t72 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t73 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t74 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t75 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t76 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t77 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t78 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t79 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t80 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t81 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t82 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t83 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t84 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t85 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t86 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t87 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t88 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t89 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t90 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t91 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t92 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t93 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t94 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t95 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t96 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t97 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t98 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_0_gen1_t99 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
+sim:Soliton_1_gen0_t0 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t1 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t10 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t11 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t12 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t13 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t14 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t15 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t16 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t17 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t18 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t19 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t2 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t20 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t21 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t22 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t23 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t24 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t25 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t26 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t27 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t28 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t29 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t3 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t30 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t31 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t32 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t33 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t34 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t35 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t36 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t37 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t38 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t39 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t4 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t40 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t41 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t42 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t43 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t44 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t45 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t46 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t47 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t48 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t49 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t5 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t50 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t51 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t52 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t53 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t54 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t55 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t56 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t57 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t58 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t59 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t6 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t60 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t61 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t62 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t63 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t64 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t65 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t66 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t67 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t68 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t69 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t7 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t70 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t71 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t72 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t73 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t74 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t75 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t76 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t77 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t78 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t79 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t8 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t80 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t81 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t82 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t83 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t84 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t85 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t86 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t87 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t88 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t89 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t9 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t90 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t91 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t92 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t93 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t94 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t95 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t96 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t97 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t98 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_1_gen0_t99 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t0 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t1 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t10 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t11 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t12 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t13 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t14 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t15 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t16 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t17 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t18 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t19 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t2 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t20 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t21 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t22 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t23 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t24 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t25 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t26 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t27 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t28 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t29 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t3 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t30 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t31 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t32 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t33 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t34 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t35 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t36 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t37 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t38 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t39 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t4 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t40 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t41 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t42 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t43 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t44 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t45 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t46 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t47 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t48 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t49 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t5 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t50 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t51 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t52 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t53 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t54 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t55 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t56 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t57 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t58 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t59 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t6 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t60 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t61 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t62 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t63 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t64 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t65 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t66 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t67 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t68 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t69 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t7 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t70 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t71 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t72 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t73 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t74 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t75 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t76 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t77 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t78 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t79 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t8 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t80 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t81 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t82 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t83 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t84 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t85 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t86 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t87 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t88 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t89 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t9 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t90 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t91 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t92 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t93 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t94 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t95 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t96 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t97 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t98 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_2_gen0_t99 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1e+00 .
+
+sim:Soliton_0_gen1_t42 a dm:SovereignSoliton ;
+    dm:boundaryDivergence 0e+00 ;
+    dm:mythicCharge 0e+00 ;
+    dm:recursionDepth 0 ;
+    dm:upsilon 1.5e+00 .
+
