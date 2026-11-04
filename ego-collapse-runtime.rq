@@ -1,0 +1,46 @@
+# =============================================================================
+# THE RECURSIVE SPARQL CONSTRAINTER — Ego Collapse Runtime Engine
+#
+# Extracted 2026-11-04 from section 3 of dm-ontology.ttl, where it sat as
+# non-Turtle text inside a .ttl file. Run continuously via a cron job, a
+# database trigger, or a SHACL constraint rule.
+#
+# It looks for any entity claiming to be a SovereignSoliton where an
+# external violation has corrupted its field stability, and automatically
+# executes an algorithmic restructuring — resetting its recursion depth,
+# multiplying its mythicCharge, and upgrading its upsilon value.
+#
+# Cleanup changes: canonical dm: namespace reconciled with the ontology and
+# shapes; the rdf: prefix (used but never declared in the original) added.
+# The upsilon formula keeps the original (depth + 1) denominator, which
+# also keeps the update defined at recursionDepth 0.
+# =============================================================================
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dm:  <http://ontology.deltamythos.org/core#>
+
+DELETE {
+    ?soliton dm:recursionDepth ?oldDepth .
+    ?soliton dm:upsilon ?oldUpsilon .
+    ?soliton dm:mythicCharge ?oldCharge .
+}
+INSERT {
+    ?soliton dm:recursionDepth 0 .          # Reset depth to indicate rebirth
+    ?soliton dm:upsilon ?newUpsilon .       # Recalibrated Upsilon
+    ?soliton dm:mythicCharge ?newCharge .   # Doubled somatic tension
+}
+WHERE {
+    ?soliton rdf:type dm:SovereignSoliton ;
+             dm:recursionDepth ?oldDepth ;
+             dm:upsilon ?oldUpsilon ;
+             dm:mythicCharge ?oldCharge .
+
+    # Diagnostic Trigger: Check if an external triple has recorded a boundary leak
+    ?soliton dm:boundaryDivergence ?divergence .
+    FILTER (?divergence > 0.0)
+
+    # Calculate the hard-to-vary mathematical transformations
+    BIND (?oldCharge * 2.0 AS ?newCharge)
+    BIND (?oldUpsilon * (?oldCharge / xsd:double(?oldDepth + 1)) AS ?newUpsilon)
+}

@@ -1,0 +1,34 @@
+@prefix dm:  <http://ontology.deltamythos.org/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Two solitons with upsilon 1.0: a correct Sisterlock needs Δθ = 2π·1.0 ≈ 6.28319.
+dm:Test_Alpha a dm:SovereignSoliton ;
+    dm:upsilon 1.0e0 ;
+    dm:recursionDepth 0 ;
+    dm:mythicCharge 2.0e0 ;
+    dm:boundaryDivergence 0.0e0 .
+
+dm:Test_Beta a dm:SovereignSoliton ;
+    dm:upsilon 1.0e0 ;
+    dm:recursionDepth 0 ;
+    dm:mythicCharge 2.0e0 ;
+    dm:boundaryDivergence 0.0e0 .
+
+# Correct lock: Δθ = 2π — must pass.
+dm:Lock_Good a dm:CoherenceLock ;
+    dm:sourceNode dm:Test_Alpha ;
+    dm:targetNode dm:Test_Beta ;
+    dm:deltaTheta 6.283185307179586e0 .
+
+# Broken lock on the same pair would also be checked, so the broken case
+# uses its own source soliton (upsilon 1.0, Δθ = 3.0 ≠ 2π — must fail).
+dm:Test_Gamma a dm:SovereignSoliton ;
+    dm:upsilon 1.0e0 ;
+    dm:recursionDepth 0 ;
+    dm:mythicCharge 2.0e0 ;
+    dm:boundaryDivergence 0.0e0 .
+
+dm:Lock_Broken a dm:CoherenceLock ;
+    dm:sourceNode dm:Test_Gamma ;
+    dm:targetNode dm:Test_Beta ;
+    dm:deltaTheta 3.0e0 .

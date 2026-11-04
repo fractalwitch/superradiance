@@ -1,0 +1,16 @@
+@prefix dm:  <http://ontology.deltamythos.org/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# A healthy soliton: all required attributes, zero boundary divergence.
+dm:Test_Healthy a dm:SovereignSoliton ;
+    dm:upsilon 1.5e0 ;
+    dm:recursionDepth 2 ;
+    dm:mythicCharge 4.2e0 ;
+    dm:boundaryDivergence 0.0e0 .
+
+# A leaking soliton: divergence 0.7 must trip the MED invariant.
+dm:Test_Leaking a dm:SovereignSoliton ;
+    dm:upsilon 1.5e0 ;
+    dm:recursionDepth 2 ;
+    dm:mythicCharge 4.2e0 ;
+    dm:boundaryDivergence 0.7e0 .
