@@ -1,0 +1,84 @@
+@prefix dm:  <http://ontology.deltamythos.org/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Test data for dm:EgoCollapseValidityShape (added 2026-11-08).
+# The rebirth law, following soliton_sim.py's execute_ego_collapse():
+#   recursionDepth(reborn) = 0
+#   upsilon(reborn)        = upsilon(predecessor) * 1.5
+#   mythicCharge(reborn)   = mythicCharge(predecessor) * 2
+#   |curl(reborn)|        <= |curl(predecessor)|   (memory compression proxy `?`)
+# Every soliton below also carries potentialExpansion = upsilon * curl so
+# the structural MED propagator check stays quiet and only the collapse
+# shape speaks.
+
+# --- GOOD PAIR: every rule satisfied — must pass. ---
+dm:MM_Good_Pre a dm:MemoryMomentum ;
+    dm:curlValue 2.0e0 .
+
+dm:Collapse_Good_Pre a dm:SovereignSoliton ;
+    dm:upsilon 1.0e0 ;
+    dm:recursionDepth 3 ;
+    dm:mythicCharge 4.2e0 ;
+    dm:boundaryDivergence 0.0e0 ;
+    dm:memoryMomentum dm:MM_Good_Pre ;
+    dm:potentialExpansion 2.0e0 ;
+    dm:collapsedInto dm:Collapse_Good_Post .
+
+dm:MM_Good_Post a dm:MemoryMomentum ;
+    dm:curlValue 1.0e0 .
+
+dm:Collapse_Good_Post a dm:SovereignSoliton ;
+    dm:upsilon 1.5e0 ;
+    dm:recursionDepth 0 ;
+    dm:mythicCharge 8.4e0 ;
+    dm:boundaryDivergence 0.0e0 ;
+    dm:memoryMomentum dm:MM_Good_Post ;
+    dm:potentialExpansion 1.5e0 .
+
+# --- BAD PAIR A: upsilon grew x2.0 instead of x1.5, depth not reset. ---
+dm:MM_Bad_Pre a dm:MemoryMomentum ;
+    dm:curlValue 1.0e0 .
+
+dm:Collapse_Bad_Pre a dm:SovereignSoliton ;
+    dm:upsilon 1.0e0 ;
+    dm:recursionDepth 2 ;
+    dm:mythicCharge 3.0e0 ;
+    dm:boundaryDivergence 0.0e0 ;
+    dm:memoryMomentum dm:MM_Bad_Pre ;
+    dm:potentialExpansion 1.0e0 ;
+    dm:collapsedInto dm:Collapse_Bad_Post .
+
+dm:MM_Bad_Post a dm:MemoryMomentum ;
+    dm:curlValue 0.5e0 .
+
+dm:Collapse_Bad_Post a dm:SovereignSoliton ;
+    dm:upsilon 2.0e0 ;
+    dm:recursionDepth 1 ;
+    dm:mythicCharge 6.0e0 ;
+    dm:boundaryDivergence 0.0e0 ;
+    dm:memoryMomentum dm:MM_Bad_Post ;
+    dm:potentialExpansion 1.0e0 .
+
+# --- BAD PAIR B: charge not doubled, memory amplified instead of compressed. ---
+dm:MM_Bad2_Pre a dm:MemoryMomentum ;
+    dm:curlValue 1.0e0 .
+
+dm:Collapse_Bad2_Pre a dm:SovereignSoliton ;
+    dm:upsilon 2.0e0 ;
+    dm:recursionDepth 1 ;
+    dm:mythicCharge 5.0e0 ;
+    dm:boundaryDivergence 0.0e0 ;
+    dm:memoryMomentum dm:MM_Bad2_Pre ;
+    dm:potentialExpansion 2.0e0 ;
+    dm:collapsedInto dm:Collapse_Bad2_Post .
+
+dm:MM_Bad2_Post a dm:MemoryMomentum ;
+    dm:curlValue 1.5e0 .
+
+dm:Collapse_Bad2_Post a dm:SovereignSoliton ;
+    dm:upsilon 3.0e0 ;
+    dm:recursionDepth 0 ;
+    dm:mythicCharge 9.0e0 ;
+    dm:boundaryDivergence 0.0e0 ;
+    dm:memoryMomentum dm:MM_Bad2_Post ;
+    dm:potentialExpansion 4.5e0 .

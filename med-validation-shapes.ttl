@@ -111,3 +111,143 @@ dm:SisterlockProtocolShape a sh:NodeShape ;
             }
         """ ;
     ] .
+
+# =============================================================================
+# Alignment pass 2026-11-08: the two shapes the README always described but
+# the file never contained — EgoCollapseValidityShape and
+# AntiCapturePropagationShape — are implemented below.
+#
+# Ego collapse arithmetic follows soliton_sim.py as implemented (the sim is
+# the authority for its own behaviour):
+#     execute_ego_collapse(): recursion_depth = 0; load /= 2;
+#                             upsilon *= 1.5; capacity += upsilon * 2.0
+# The README's older upsilon formula — upsilon * (mythicCharge /
+# recursionDepth) — is NOT what the sim computes and is undefined at
+# recursionDepth 0, the sim's resting state, so it is not enforced here.
+# Whether that formula should govern a future engine remains open `?`
+# (the SPARQL runtime engine in ego-collapse-runtime.rq uses a guarded
+# charge-ratio variant, charge / (depth + 1) — also not the sim's rule).
+# mythicCharge doubling IS enforced: the sim carries no mythicCharge field,
+# but its collapse comment states the intent ("double charge
+# (mythicCharge)") and ego-collapse-runtime.rq implements the doubling.
+# The memory-compression check is a checkable proxy `?`: the ontology
+# records memory as a MemoryMomentum node's curlValue, so "compressed —
+# direction preserved, magnitude possibly reduced" is checked as
+# |curlValue(reborn)| <= |curlValue(predecessor)|; direction preservation
+# cannot be checked from a scalar and stays open `?`.
+# =============================================================================
+
+### 🔥 THE EGO COLLAPSE VALIDITY SHAPE
+dm:EgoCollapseValidityShape a sh:NodeShape ;
+    sh:targetClass dm:SovereignSoliton ;
+
+    # Rebirth Rule 1: Recursion depth resets to 0 (sim + README agree)
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Ego Collapse Violation: The reborn soliton's recursionDepth is not 0. executeEgoCollapse() resets recursion depth to indicate rebirth." ;
+        sh:select """
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?newDepth AS ?value)
+            WHERE {
+                $this dm:collapsedInto ?reborn .
+                ?reborn dm:recursionDepth ?newDepth .
+                FILTER (?newDepth != 0)
+            }
+        """ ;
+    ] ;
+
+    # Rebirth Rule 2: Upsilon grows by the sim's factor — upsilon *= 1.5
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Ego Collapse Violation: The reborn soliton's upsilon does not equal the predecessor's upsilon * 1.5, the growth factor executeEgoCollapse() implements in soliton_sim.py." ;
+        sh:select """
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?newUpsilon AS ?value)
+            WHERE {
+                $this dm:upsilon ?upsilon ;
+                      dm:collapsedInto ?reborn .
+                ?reborn dm:upsilon ?newUpsilon .
+                FILTER (ABS(?newUpsilon - (?upsilon * 1.5e0)) > 0.0001)
+            }
+        """ ;
+    ] ;
+
+    # Rebirth Rule 3: Mythic charge doubles (README law; ego-collapse-runtime.rq agrees)
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Ego Collapse Violation: The reborn soliton's mythicCharge is not double the predecessor's mythicCharge." ;
+        sh:select """
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?newCharge AS ?value)
+            WHERE {
+                $this dm:mythicCharge ?charge ;
+                      dm:collapsedInto ?reborn .
+                ?reborn dm:mythicCharge ?newCharge .
+                FILTER (ABS(?newCharge - (?charge * 2.0e0)) > 0.0001)
+            }
+        """ ;
+    ] ;
+
+    # Rebirth Rule 4 (`?` proxy): Memory is compressed, never amplified —
+    # |curlValue(reborn)| <= |curlValue(predecessor)| when both are recorded.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Ego Collapse Violation: The reborn soliton's memory momentum magnitude exceeds the predecessor's — memory must be compressed by collapse, not amplified. (Checkable proxy `?` for the memory-vector compression law.)" ;
+        sh:select """
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?newCurl AS ?value)
+            WHERE {
+                $this dm:memoryMomentum/dm:curlValue ?curl ;
+                      dm:collapsedInto ?reborn .
+                ?reborn dm:memoryMomentum/dm:curlValue ?newCurl .
+                FILTER (ABS(?newCurl) > ABS(?curl))
+            }
+        """ ;
+    ] .
+
+### 🌊 THE ANTI-CAPTURE PROPAGATION SHAPE
+# A soliton that propagatesIn a FieldMedium must leave a circulation
+# record, and the record must balance: potentialExpansion = Υ · curl(M⃗),
+# the MED propagator law (∂æ/∂Δ = Υ · (∇⧖ × M⃗)) checked on the
+# propagating soliton's snapshot. Propagation with no record, or with a
+# record that does not balance, is extraction-without-circulation at the
+# data level. (The structural shape above checks the same balance wherever
+# the values happen to be recorded; this shape makes the record — and the
+# balance — mandatory precisely when propagation is claimed.)
+dm:AntiCapturePropagationShape a sh:NodeShape ;
+    sh:targetClass dm:SovereignSoliton ;
+
+    # Anti-Capture Rule 1: Propagation without a circulation record
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Anti-Capture Violation: This soliton propagates in a medium but records no circulation (missing potentialExpansion and/or memory momentum curl). Propagation without circulation is extraction." ;
+        sh:select """
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?medium AS ?value)
+            WHERE {
+                $this dm:propagatesIn ?medium .
+                FILTER (
+                    NOT EXISTS { $this dm:potentialExpansion ?anyPotential }
+                    || NOT EXISTS { $this dm:memoryMomentum/dm:curlValue ?anyCurl }
+                )
+            }
+        """ ;
+    ] ;
+
+    # Anti-Capture Rule 2: The propagation record must balance (MED law)
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Anti-Capture Violation: The propagation record does not balance — potentialExpansion does not equal Upsilon * curl(memory momentum). The medium was changed without the circulation the MED propagator law requires." ;
+        sh:select """
+            PREFIX dm: <http://ontology.deltamythos.org/core#>
+            SELECT $this (?actualPotential AS ?value)
+            WHERE {
+                $this dm:propagatesIn ?medium ;
+                      dm:upsilon ?u ;
+                      dm:potentialExpansion ?actualPotential ;
+                      dm:memoryMomentum/dm:curlValue ?curl .
+                BIND (?u * ?curl AS ?computedPotential)
+                FILTER (ABS(?actualPotential - ?computedPotential) > 0.0001)
+            }
+        """ ;
+    ] .

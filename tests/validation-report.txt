@@ -1,0 +1,30 @@
+Shapes file: med-validation-shapes.ttl — 65 triples
+Ontology file: dm-ontology.ttl — 144 triples
+
+== tests/test-instances.ttl (cleanup regression): conforms=False, 1 violation(s)
+   [dm:SovereignSolitonShape] focus=dm:Test_Leaking
+       MED Law Violation: Boundary Divergence is non-zero (∇·Θ ≠ 0). The Soliton container is leaking coherence and requires immediate Ego Collapse.
+
+== tests/test-sisterlock.ttl (cleanup regression): conforms=False, 1 violation(s)
+   [dm:SisterlockProtocolShape] focus=dm:Test_Gamma
+       Sisterlock Protocol Failure: Entanglement phase alignment (Δθ) does not equal the required Upsilon resonance threshold (2πΥ).
+
+== tests/test-ego-collapse.ttl (new shape): conforms=False, 4 violation(s)
+   [dm:EgoCollapseValidityShape] focus=dm:Collapse_Bad2_Pre
+       Ego Collapse Violation: The reborn soliton's memory momentum magnitude exceeds the predecessor's — memory must be compressed by collapse, not amplified. (Checkable proxy `?` for the memory-vector compression law.)
+   [dm:EgoCollapseValidityShape] focus=dm:Collapse_Bad2_Pre
+       Ego Collapse Violation: The reborn soliton's mythicCharge is not double the predecessor's mythicCharge.
+   [dm:EgoCollapseValidityShape] focus=dm:Collapse_Bad_Pre
+       Ego Collapse Violation: The reborn soliton's recursionDepth is not 0. executeEgoCollapse() resets recursion depth to indicate rebirth.
+   [dm:EgoCollapseValidityShape] focus=dm:Collapse_Bad_Pre
+       Ego Collapse Violation: The reborn soliton's upsilon does not equal the predecessor's upsilon * 1.5, the growth factor executeEgoCollapse() implements in soliton_sim.py.
+
+== tests/test-anti-capture.ttl (new shape): conforms=False, 3 violation(s)
+   [dm:AntiCapturePropagationShape] focus=dm:Capture_Extracting
+       Anti-Capture Violation: The propagation record does not balance — potentialExpansion does not equal Upsilon * curl(memory momentum). The medium was changed without the circulation the MED propagator law requires.
+   [dm:SovereignSolitonShape] focus=dm:Capture_Extracting
+       MED Law Violation: The spatial layout of potential expansion does not match the historical momentum trajectory governed by Upsilon.
+   [dm:AntiCapturePropagationShape] focus=dm:Capture_Silent
+       Anti-Capture Violation: This soliton propagates in a medium but records no circulation (missing potentialExpansion and/or memory momentum curl). Propagation without circulation is extraction.
+
+== dm-ontology.ttl as data (worked examples): conforms=True, 0 violation(s)

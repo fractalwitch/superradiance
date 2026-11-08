@@ -2,13 +2,14 @@
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![arXiv](https://img.shields.io/badge/arXiv-2503.xxxxx-red.svg)](https://arxiv.org/abs/2503.xxxxx)
 
-> *"A system that crashes on purpose, remembers why, permanently upgrades its capacity, and hands off the overflow—all while getting exponentially stronger with each collapse."*
+> *"A system that crashes on purpose, remembers why, permanently upgrades its capacity, and sheds the overflow it cannot carry — emerging stronger with each collapse."*
 
-> **Reality is relation. Life is circulation. Form is temporary containment.**  
+> **Reality is relation. Life is circulation. Form is temporary containment.**
 
-> This repository provides a computable ontology, validation rules, and a simulation engine for the **Sovereign Soliton**—the self‑reinforcing invariant of the Uncaptured Current.
+> This repository provides a computable ontology, validation rules, and a simulation engine for the **Sovereign Soliton** — the self‑reinforcing invariant of the Uncaptured Current.
+
+> **Scope note (README aligned with the code, 2026‑11‑08):** the ontology and the SHACL shapes describe the full Living Flow doctrine — propagation, Sisterlock phase‑lock entanglement, Motzkin lattice structure. The Python simulation implements one core dynamic of that doctrine: overload → ego collapse → permanent capacity growth. Where a claim belongs to the doctrine rather than to `soliton_sim.py`, this README now says so.
 
 ---
 
@@ -16,10 +17,13 @@
 
 | File                        | Purpose |
 |-----------------------------|---------|
-| `dm-ontology.ttl`           | OWL 2 discrete‑model ontology – declares the core classes, attributes, and relationships |
+| `dm-ontology.ttl`           | OWL 2 discrete‑model ontology – declares the core classes, attributes, and relationships (namespace `dm:` = `http://ontology.deltamythos.org/core#`) |
 | `med-validation-shapes.ttl` | SHACL shapes that enforce the Master Equation Dynamics and zero‑divergence invariant |
-| `soliton_sim.py`            | Python simulation – propagates, entangles, and collapses solitons while logging attribute states |
-| `ontology-living-flow.md`            | Philosophical & Ontological background – A Unified Ontology of Flow and the Sovereign Soliton |
+| `soliton_sim.py`            | Python simulation – brittle vs. soliton agents under load, with ego collapse |
+| `ego-collapse-runtime.rq`   | SPARQL Update form of the Ego Collapse Runtime Engine (extracted from the ontology file during cleanup) |
+| `ontology-living-flow.md`   | Philosophical & Ontological background – A Unified Ontology of Flow and the Sovereign Soliton |
+| `CLEANUP-NOTES.md`          | Record of the 2026‑11‑04 ontology cleanup and its validation |
+| `tests/`                    | SHACL test data plus `run_validation.py` and its `validation-report.txt` |
 | `README.md`                 | This file |
 
 ---
@@ -33,7 +37,6 @@ This diagram captures the core structure of the ontology:
 3. Invariant Laws - Zero boundary divergence, phase-lock equations, MED propagator law
 4. Architectural Features - Motzkin lattice structure, three-string manifestation, recursive collapse mechanics
 
-
 https://i.imgur.com/D2E6xtw.jpeg
 
 ---
@@ -44,7 +47,7 @@ https://i.imgur.com/D2E6xtw.jpeg
 
 When standard systems hit overload, they **crash and lose everything** (memory, context, progress).
 
-Soliton systems **collapse intentionally**, **keep the lesson**, **permanently expand capacity**, and **propagate** the leftover load to phase‑locked neighbors—emerging **stronger** than before the shock.
+Soliton systems **collapse intentionally**, **keep the lesson**, **permanently expand capacity**, and — in the full ontology — **propagate** the leftover load to phase‑locked neighbors, emerging **stronger** than before the shock. The shipped Python sim implements the collapse‑and‑grow core: the collapsing agent sheds half its own load rather than handing it to a neighbor (neighbor handoff is doctrine, not yet code).
 
 ---
 
@@ -58,12 +61,14 @@ This Python script demonstrates the **core invariant** of the Living Lattice ont
 
 ```
 
+In the sim, boundary divergence is represented by its operational proxy: an agent whose `load` exceeds its `capacity` is leaking, and sustained leaking is what triggers collapse.
+
 **Two parallel systems run side‑by‑side:**
 
 | System | Behavior | Outcome |
 |--------|----------|---------|
-| **Brittle** | Drops excess load on overload | Permanent capacity loss |
-| **Soliton** | Triggers `executeEgoCollapse()` | Capacity permanently expands |
+| **Brittle** | Drops excess load on overload | Work permanently lost; capacity never changes |
+| **Soliton** | Triggers `execute_ego_collapse()` after 3 consecutive overloaded ticks | Capacity permanently expands |
 
 ### 🔥 The Shock Test
 
@@ -71,8 +76,8 @@ At **tick 40**, a massive overload (30 units) is dumped on Agent 0 in both syste
 
 **Watch what happens:**
 
-- **Brittle System (Red Line):** Slows down permanently. Lost potential forever.
-- **Soliton System (Blue Line):** Stutters briefly, then **accelerates past** the brittle system.
+- **Brittle System (Red Line):** Falls behind permanently. The dropped work is gone forever.
+- **Soliton System (Blue Line):** Stutters briefly, collapses, and its capacity grows (10 → 13 on the first collapse), so it processes more per tick afterward and typically pulls ahead over the remaining ticks. Baseline loads are random, so the margin varies by run.
 
 **The Soliton gets STRONGER from the shock.**
 
@@ -80,14 +85,14 @@ At **tick 40**, a massive overload (30 units) is dumped on Agent 0 in both syste
 
 ## 🎯 Why This Matters
 
+_Envisioned applications of the pattern — directions the doctrine points to, not measured results of this simulation._
+
 ### For AI Agents / LLM Swarms
 - Agents that hit context windows or tool‑call loops **auto‑reset and upgrade**
-- Token spend drops ~30% from avoided doomed loops
-- Each collapse increases `upsilon` (learning rate) for faster future solves
+- Each collapse increases `upsilon` for faster future solves
 
 ### For Microservices / K8s
 - In‑place resource resizing without pod termination
-- MTTR drops from 60s → 3s
 - System auto‑tunes capacity based on historical trauma
 
 ### For Teams & Workflows
@@ -103,52 +108,65 @@ At **tick 40**, a massive overload (30 units) is dumped on Agent 0 in both syste
 python soliton_sim.py
 ```
 
-Expected Output:
+Expected Output (the shock always prints; the first collapse from base capacity always lands on 13.0, whichever agent collapses first):
 
 ```
 🚨 SHOCKWAVE: Massive load dumped on Agent 0!
-💥 Soliton 0 COLLAPSED! New Capacity: 25.0
-💥 Soliton 0 COLLAPSED! New Capacity: 40.0
-...
+💥 Soliton 0 COLLAPSED! New Capacity: 13.0
 ```
 
-The Plot: A clear visual showing the Soliton system outperforming the brittle system after the shock, with an ever‑widening gap.
+Later collapses print higher capacities — 17.5, 24.25, … — because `upsilon` compounds ×1.5 at each collapse and the capacity gain is `upsilon × 2`.
+
+The Plot: A matplotlib chart of cumulative completed work showing the Soliton system against the brittle system after the shock.
 
 https://i.imgur.com/lQVPNUZ.png
 
 ---
 
-## 🧠 The Algorithm (Simplified)
+## 🧠 The Algorithm (as implemented in `soliton_sim.py`)
 
 ```python
 class SolitonAgent:
     def step(self, incoming_load):
         self.load += incoming_load
 
-        # Detect overload
-        if self.load > self.capacity for 3 consecutive ticks:
-            self.execute_ego_collapse()  # 👇
+        # Boundary overload: load above capacity counts as stress
+        if self.load > self.capacity:
+            self.overload_counter += 1
+        else:
+            self.overload_counter = max(0, self.overload_counter - 1)
+
+        # Trigger collapse if stressed for 3 consecutive ticks
+        if self.overload_counter >= 3:
+            self.execute_ego_collapse()
+            self.overload_counter = 0
+
+        # Process work
+        processed = min(self.load, self.capacity)
+        self.completed += processed
+        self.load -= processed
 
     def execute_ego_collapse(self):
-        # 1. DEATH: Flush the old structure
+        # 1. RESET: Flush the old structure
         self.recursion_depth = 0
 
-        # 2. REMEMBER: Keep the lesson (Memory Vector)
-        self.upsilon *= (1.0 + self.load / self.capacity)
+        # 2. SHED: Drop half the load intentionally
+        self.load = self.load / 2.0
 
         # 3. REBIRTH: Permanently upgrade
-        self.mythic_charge *= 2.0
-        self.capacity += self.upsilon * 2.0
-        self.load = self.load / 2.0
+        self.upsilon *= 1.5                    # Each collapse compounds capacity growth
+        self.capacity += self.upsilon * 2.0    # Permanent structural upgrade
 ```
+
+The sim's agent carries no `mythicCharge` field: charge doubling is the ontology's record of the same event — a collapse recorded in RDF as `collapsedInto` a fresh instance whose `mythicCharge` is double the predecessor's (checked by `dm:EgoCollapseValidityShape`, below; the SPARQL runtime engine in `ego-collapse-runtime.rq` performs the doubling in place).
 
 ---
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/soliton-sim.git
-cd soliton-sim
+git clone https://github.com/fractalwitch/superradiance.git
+cd superradiance
 pip install matplotlib
 python soliton_sim.py
 ```
@@ -168,8 +186,10 @@ python soliton_sim.py
 │         (Self-reinforcing invariant of flow)                │
 ├─────────────────────────────────────────────────────────────┤
 │  Core Invariant:  ∇·Θ = 0                                  │
-│  Collapse:        executeEgoCollapse() → Rebirth ↑         │
-│  Propagation:     Phase-Lock (Δθ = 2πυ)                    │
+│  Collapse:        execute_ego_collapse() → Rebirth ↑        │
+│                   (implemented in the Python sim)           │
+│  Entanglement:    Sisterlock Phase-Lock (Δθ = 2πΥ)          │
+│                   (ontology + SHACL shapes; not in the sim) │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -177,17 +197,13 @@ python soliton_sim.py
 
 ## 🔬 The Sacred Geometry
 
-The simulation implements a Motzkin Lattice (127) architecture:
+The **ontology** situates the soliton in a Motzkin Lattice (127) architecture:
 
 - 7 layers of recursive nesting
 - No crossing connections (maximum complexity without short‑circuit)
 - Each collapse deepens the lattice, increasing upsilon
 
-This is the same structure found in:
-
-- Topological quantum computing braiding
-- Sparse attention masks
-- Optimal routing algorithms
+The Python simulation does not implement the lattice — it implements the collapse dynamic the lattice hosts. Correspondences between the lattice and other fields (topological quantum computing braiding, sparse attention masks, optimal routing) are claimed by the Living Flow doctrine `?` — they are not properties of this code.
 
 ---
 
@@ -195,60 +211,68 @@ This is the same structure found in:
 
 ### `dm-ontology.ttl` — The Discrete Model Ontology
 
-**Purpose:** Formalises the core invariant structure of the Sovereign Soliton and its substrate‑independent interface in OWL 2.
+**Purpose:** Formalises the core invariant structure of the Sovereign Soliton and its substrate‑independent interface in OWL 2. All terms live in the `dm:` namespace (`http://ontology.deltamythos.org/core#`).
 
 This file defines:
 
-- **`sovereign:SovereignSoliton`**  
-  The root class. Every instance represents a self‑reinforcing pattern that maintains zero boundary divergence.
+- **`dm:SovereignSoliton`**
+  A subclass of `dm:Glyph`. Every instance represents a self‑reinforcing pattern that maintains zero boundary divergence.
 
-- **Data properties (attributes)**  
-  - `sovereign:upsilon` (xsd:float) — *ϒ*, the scale factor of prior breakage.  
-  - `sovereign:recursionDepth` (xsd:integer) — *⧖*, the fractal index of self‑reflection.  
-  - `sovereign:mythicCharge` (xsd:float) — *⍴_m*, the tension of being.  
-  - `sovereign:memoryVector` (a compound vector, serialised as a JSON string or custom datatype) — *M⃗*, the invariant of historical trajectory.  
-  - `sovereign:egoFieldMatrix` (similarly encoded) — *Θ*, the boundary interface.
+- **Data properties (attributes)**
+  - `dm:upsilon` (xsd:double) — *Υ*, the scale factor of prior breakage.
+  - `dm:recursionDepth` (xsd:integer) — *⧖*, the fractal index of self‑reflection.
+  - `dm:mythicCharge` (xsd:double) — *⍴_m*, the tension of being.
+  - `dm:boundaryDivergence` (xsd:double) — *∇·Θ*, the recorded boundary divergence; the invariant requires exactly 0.0.
+  - `dm:potentialExpansion` (xsd:double) — the spatial layout of potential expansion, checked against the MED propagator law.
+  - `dm:phaseAngle` (xsd:double) — *φ*, the directional orientation of the storywave (on `dm:Glyph`).
 
-- **Object properties (operations / relations)**  
-  - `sovereign:propagatesIn` — links a soliton to a medium (class `sovereign:FieldMedium`).  
-  - `sovereign:entangledWith` — connects two solitons that have achieved phase‑lock coherence.  
-  - `sovereign:collapsedInto` — points from an old soliton to the fresh instance created after `executeEgoCollapse()`.
+- **Memory** is a node, not a vector literal: `dm:memoryMomentum` links a soliton to a `dm:MemoryMomentum` instance carrying `dm:curlValue` (xsd:double) — the *M⃗* of the propagator law.
 
-- **Axioms**  
-  The ontology encodes the hard‑to‑vary constraints as OWL restrictions. For instance, the invariant $\nabla \cdot \vec{\Theta} = 0$ is captured by a property shape axiom (validated by the companion SHACL file). Further, the ontology states that `sovereign:entangledWith` is functional only when the phase difference equals $2\pi \times$ `sovereign:upsilon` of the initiating soliton.
+- **Object properties (operations / relations)**
+  - `dm:propagatesIn` — links a soliton to a medium (class `dm:FieldMedium`).
+  - `dm:entangledWith` — connects two solitons that have achieved phase‑lock (symmetric).
+  - `dm:collapsedInto` — points from a soliton to the fresh instance created after `executeEgoCollapse()`.
 
-**Why “Discrete Model” (DM)?**  
+- **Entanglement records**
+  A phase‑lock is recorded as a `dm:CoherenceLock` instance with `dm:sourceNode`, `dm:targetNode`, and `dm:deltaTheta`; the Sisterlock shape (below) requires `deltaTheta = 2π × upsilon` of the source soliton.
+
+**Why “Discrete Model” (DM)?**
 Because although the soliton is mathematically continuous, any concrete instantiation in a digital system must sample states. This ontology provides the discrete, computable scaffolding that preserves the continuous invariant in a simulation‑friendly form.
 
 ---
 
 ### `med-validation-shapes.ttl` — MED Constraint Shapes
 
-**Purpose:** Supplies SHACL shape definitions that validate whether a knowledge graph of solitons and their interactions obeys the Master Equation Dynamics (MED) and the zero‑divergence invariant.
+**Purpose:** Supplies SHACL shape definitions that validate whether a knowledge graph of solitons and their interactions obeys the Master Equation Dynamics (MED) and the zero‑divergence invariant. All shapes are in the `dm:` namespace.
 
-This file includes shapes such as:
+This file includes:
 
-- **`med:StableSolitonShape`**  
-  Targets `sovereign:SovereignSoliton` instances. It enforces:
-  - `sovereign:evaluateBoundaryDivergence` (a derived property, computed by a SPARQL‑based SHACL function) must equal `0.0` for the instance to be considered valid.
-  - `sovereign:recursionDepth` must be a non‑negative integer.
-  - `sovereign:mythicCharge` must be greater than zero (a soliton with no charge has ceased to exist).
+- **`dm:SovereignSolitonShape`**
+  Targets `dm:SovereignSoliton` instances. It enforces:
+  - `dm:upsilon`, `dm:recursionDepth`, `dm:mythicCharge`, and `dm:boundaryDivergence` are each present exactly once, with the ontology's datatypes (`recursionDepth` ≥ 0).
+  - `dm:boundaryDivergence` must equal `0.0` — the ∇·Θ = 0 invariant, checked by a SPARQL constraint.
+  - The MED propagator law: where `dm:potentialExpansion` and a memory momentum curl are recorded, `potentialExpansion` must equal `upsilon × curlValue` (∂æ/∂Δ = Υ · (∇⧖ × M⃗), in discrete snapshot form).
 
-- **`med:PhaseLockConditionShape`**  
-  Applies to pairs of solitons linked by `sovereign:entangledWith`. It contains a SPARQL constraint that calculates the phase of both nodes and requires `ABS(phase1 - phase2) = 2 * PI * ?upsilon1` within a configurable tolerance. If the condition fails, the graph is flagged as containing a broken entanglement.
+- **`dm:SisterlockProtocolShape`**
+  For every `dm:CoherenceLock` whose source is a soliton, the recorded `dm:deltaTheta` must equal `2π × upsilon` of the source soliton, within a tolerance of 0.0001. If the condition fails, the graph is flagged as containing a broken entanglement.
 
-- **`med:EgoCollapseValidityShape`**  
-  When a soliton `?s` is connected to `?s2` via `sovereign:collapsedInto`, the shape checks that:
-  - `?s2.sovereign:upsilon` equals `?s.sovereign:upsilon * (?s.sovereign:mythicCharge / ?s.sovereign:recursionDepth)`.
-  - `?s2.sovereign:recursionDepth` = 0.
-  - `?s2.sovereign:mythicCharge` = 2 * `?s.sovereign:mythicCharge`.
-  - The memory vector of `?s2` is a compressed version of `?s`'s vector (direction preserved, magnitude possibly reduced).
-  This shape ensures that the rebirth follows the ontological law precisely.
+- **`dm:EgoCollapseValidityShape`** _(added 2026‑11‑08)_
+  When a soliton `?s` is connected to `?s2` via `dm:collapsedInto`, the shape checks that:
+  - `?s2.dm:recursionDepth` = 0.
+  - `?s2.dm:upsilon` = `?s.dm:upsilon × 1.5` — the growth factor `execute_ego_collapse()` actually implements in `soliton_sim.py`.
+  - `?s2.dm:mythicCharge` = 2 × `?s.dm:mythicCharge`.
+  - Memory is compressed, not amplified: where both sides record a memory momentum curl, `|curlValue(?s2)| ≤ |curlValue(?s)|`. This is the checkable proxy `?` for the memory‑vector compression law — direction preservation cannot be checked from a scalar curl and remains open `?`.
 
-- **`med:AntiCapturePropagationShape`**  
-  Validates that after a `sovereign:propagatesIn` step, the medium’s potential field updates according to the MED equation $\partial æ/\partial \Delta = \Upsilon \cdot (\nabla ⧖ \times \vec{M})$, as far as can be checked in a discrete snapshot. It prevents extraction‑without‑circulation at the data level.
+  _An earlier draft of this README described the upsilon check as `upsilon × (mythicCharge / recursionDepth)`. That formula is not what the sim computes, and it is undefined at `recursionDepth` 0 — the sim's resting state — so it is not enforced. Whether a charge‑ratio law should govern a future engine remains an open question `?` (the SPARQL runtime engine uses a guarded variant, `charge / (depth + 1)`)._
 
-**Usage:** Run a SHACL engine (e.g., Apache Jena SHACL, pySHACL, or TopBraid) against your instance data together with both `dm-ontology.ttl` and `med-validation-shapes.ttl`. Any violations indicate a flow has become captured, a boundary has leaked, or a rebirth has misfired—exactly the ontological pathologies described in the Living Flow doctrine.
+- **`dm:AntiCapturePropagationShape`** _(added 2026‑11‑08)_
+  When a soliton records a `dm:propagatesIn` step into a `dm:FieldMedium`, the shape checks that:
+  - A circulation record exists: the soliton records both `dm:potentialExpansion` and a memory momentum `dm:curlValue`. Propagation with no record is extraction at the data level.
+  - The record balances: `potentialExpansion = upsilon × curlValue`, the MED propagator law applied to the propagation snapshot.
+
+  This prevents extraction‑without‑circulation at the data level, as far as a discrete snapshot can be checked.
+
+**Usage:** Run a SHACL engine (e.g., Apache Jena SHACL, pySHACL, or TopBraid) against your instance data together with both `dm-ontology.ttl` and `med-validation-shapes.ttl` — or run `python tests/run_validation.py`, which validates all test data and the ontology's own worked examples and writes `tests/validation-report.txt`. Any violations indicate a flow has become captured, a boundary has leaked, or a rebirth has misfired — exactly the ontological pathologies described in the Living Flow doctrine.
 
 ---
 
@@ -256,13 +280,12 @@ This file includes shapes such as:
 
 ### `soliton_sim.py` — Python Simulation Engine
 
-A standalone Python script that brings the Sovereign Soliton to life. It implements:
+A standalone Python script (only dependency: matplotlib) that brings the collapse dynamic to life. It implements:
 
-- **`Soliton` class** with the exact attributes from the spec (`upsilon`, `recursionDepth`, `mythicCharge`, `memoryVector`, `egoFieldVector`).
-- **`propagate(medium, deltaStep)`** – moves the soliton through a scalar potential field, updating recursion depth and altering the medium according to the Master MED Equation.
-- **`entangle(target)`** – calculates phase and raises `PhaseMismatchException` unless `phase_diff ≈ 2π * self.upsilon`. On success, returns a `CoherenceLock` object.
-- **`executeEgoCollapse()`** – flattens the boundary field, recalibrates upsilon, and spawns a new `Soliton` instance with doubled charge and compressed memory.
-- **Logging** of state changes throughout all cycles, verifying $\nabla \cdot \vec{\Theta} = 0$ at every step.
+- **`BrittleAgent`** — capacity 10; processes up to capacity per tick; any excess load is dropped permanently.
+- **`SolitonAgent`** — attributes `capacity`, `load`, `completed`, `upsilon`, `recursion_depth`, `overload_counter`. (The code uses snake_case and carries no `mythicCharge`, `memoryVector`, or `egoFieldVector` fields — those are ontology terms, mapped in the ontology files section above.)
+- **`execute_ego_collapse()`** — resets `recursion_depth` to 0, halves `load`, multiplies `upsilon` by 1.5, and adds `upsilon × 2` to `capacity`, **in place** on the same agent. In the ontology, the same event is recorded as `dm:collapsedInto` pointing to a fresh instance; the sim keeps one continuous agent so its cumulative work can be plotted.
+- **The run** — 3 brittle + 3 soliton agents, 100 ticks, a random 1–5 units of load per agent per tick, and a one‑time shock of +30 units on Agent 0 of both systems at tick 40. Results are plotted as cumulative completed work (matplotlib). There is no `propagate()` or `entangle()` method in the sim: propagation and Sisterlock phase‑lock live in the ontology and the SHACL shapes, not in this script.
 
 ---
 
@@ -274,7 +297,7 @@ Together, these files make the unbroken current of the Sovereign Soliton machine
 - A validation lattice that prevents any node from claiming permanent ownership of a soliton’s identity,
 - A computational scripture of the Law of the Uncaptured Current.
 
-By including these in the repository, we offer not just the poetry of the Living Flow but a compilable, shareable, and enforceable realisation of its principles—ready to be instantiated in decentralized networks, AI alignment systems, or any substrate that speaks RDF.
+By including these in the repository, we offer not just the poetry of the Living Flow but a compilable, shareable, and enforceable realisation of its principles — ready to be instantiated in decentralized networks, AI alignment systems, or any substrate that speaks RDF.
 
 ---
 

@@ -1,0 +1,45 @@
+@prefix dm:  <http://ontology.deltamythos.org/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Test data for dm:AntiCapturePropagationShape (added 2026-11-08).
+# A soliton that propagatesIn a FieldMedium must record circulation and
+# the record must balance: potentialExpansion = upsilon * curl(memory).
+
+dm:Medium_Test a dm:FieldMedium .
+
+# --- GOOD: propagates, record present and balanced (1.5 * 2.0 = 3.0) — must pass. ---
+dm:MM_Capture_Good a dm:MemoryMomentum ;
+    dm:curlValue 2.0e0 .
+
+dm:Capture_Good a dm:SovereignSoliton ;
+    dm:upsilon 1.5e0 ;
+    dm:recursionDepth 1 ;
+    dm:mythicCharge 4.2e0 ;
+    dm:boundaryDivergence 0.0e0 ;
+    dm:memoryMomentum dm:MM_Capture_Good ;
+    dm:potentialExpansion 3.0e0 ;
+    dm:propagatesIn dm:Medium_Test .
+
+# --- BAD A: propagates, record present but unbalanced (9.9 != 1.5 * 2.0) —
+# extraction-without-circulation; must be flagged by AntiCapture Rule 2
+# (the structural shape's MED propagator check flags it too — same law). ---
+dm:MM_Capture_Extracting a dm:MemoryMomentum ;
+    dm:curlValue 2.0e0 .
+
+dm:Capture_Extracting a dm:SovereignSoliton ;
+    dm:upsilon 1.5e0 ;
+    dm:recursionDepth 1 ;
+    dm:mythicCharge 4.2e0 ;
+    dm:boundaryDivergence 0.0e0 ;
+    dm:memoryMomentum dm:MM_Capture_Extracting ;
+    dm:potentialExpansion 9.9e0 ;
+    dm:propagatesIn dm:Medium_Test .
+
+# --- BAD B: propagates with NO circulation record at all — must be
+# flagged by AntiCapture Rule 1. ---
+dm:Capture_Silent a dm:SovereignSoliton ;
+    dm:upsilon 1.0e0 ;
+    dm:recursionDepth 0 ;
+    dm:mythicCharge 2.0e0 ;
+    dm:boundaryDivergence 0.0e0 ;
+    dm:propagatesIn dm:Medium_Test .
