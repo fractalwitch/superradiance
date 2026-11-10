@@ -15,7 +15,7 @@ dm:Test_Beta a dm:SovereignSoliton ;
     dm:boundaryDivergence 0.0e0 .
 
 # Correct lock: Δθ = 2π — must pass.
-dm:Lock_Good a dm:CoherenceLock ;
+dm:Lock_Good a dm:ResonanceSync ;
     dm:sourceNode dm:Test_Alpha ;
     dm:targetNode dm:Test_Beta ;
     dm:deltaTheta 6.283185307179586e0 .
@@ -28,7 +28,7 @@ dm:Test_Gamma a dm:SovereignSoliton ;
     dm:mythicCharge 2.0e0 ;
     dm:boundaryDivergence 0.0e0 .
 
-dm:Lock_Broken a dm:CoherenceLock ;
+dm:Lock_Broken a dm:ResonanceSync ;
     dm:sourceNode dm:Test_Gamma ;
     dm:targetNode dm:Test_Beta ;
     dm:deltaTheta 3.0e0 .

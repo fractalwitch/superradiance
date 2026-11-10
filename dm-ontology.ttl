@@ -16,7 +16,7 @@
 #     never declared are now declared: boundaryDivergence,
 #     potentialExpansion, memoryMomentum / curlValue, deltaTheta,
 #     harmonicSync, interferesWith, producesInterferencePattern,
-#     propagatesIn, collapsedInto, CoherenceLock (with sourceNode /
+#     propagatesIn, collapsedInto, ResonanceSync (with sourceNode /
 #     targetNode), FieldMedium, MemoryMomentum.
 #   * Worked examples completed with the mythicCharge / boundaryDivergence
 #     values the MED shapes require, so the examples themselves validate.
@@ -26,7 +26,7 @@
 #     have passed their own validation for this reason either.
 #   * The gate examples were written in RDF-star (<< ... >> quoted triples),
 #     which mainstream Turtle tooling (rdflib, pySHACL) cannot parse. They
-#     are remodelled below as plain triples plus CoherenceLock / gate
+#     are remodelled below as plain triples plus ResonanceSync / gate
 #     records carrying the same metrics — same information, standard Turtle.
 # =============================================================================
 
@@ -63,8 +63,8 @@ dm:MemoryMomentum a owl:Class ;
     rdfs:label "Memory Momentum" ;
     rdfs:comment "The enfolded memory matrix node (M⃗) of a soliton; carries curlValue for the MED propagator law." .
 
-dm:CoherenceLock a owl:Class ;
-    rdfs:label "Coherence Lock" ;
+dm:ResonanceSync a owl:Class ;
+    rdfs:label "Resonance Sync" ;
     rdfs:comment "A phase-lock entanglement record between two solitons (Sisterlock Protocol); carries deltaTheta." .
 
 ### --- Data Properties (The Invariant Attributes) ---
@@ -105,7 +105,7 @@ dm:curlValue a owl:DatatypeProperty ;
     rdfs:comment "The curl metric of the enfolded memory matrix, used by the MED propagator law." .
 
 dm:deltaTheta a owl:DatatypeProperty ;
-    rdfs:domain dm:CoherenceLock ;
+    rdfs:domain dm:ResonanceSync ;
     rdfs:range xsd:double ;
     rdfs:comment "Δθ: The phase difference recorded on an entanglement or gate relation." .
 
@@ -157,21 +157,21 @@ dm:interferesWith a owl:SymmetricProperty, owl:ObjectProperty ;
     rdfs:comment "Records mutual interference between two glyphs (the XOR gate relation)." .
 
 dm:sourceNode a owl:ObjectProperty ;
-    rdfs:domain dm:CoherenceLock ;
+    rdfs:domain dm:ResonanceSync ;
     rdfs:range dm:Glyph ;
-    rdfs:comment "The initiating node of a coherence lock (a SovereignSoliton, or a Glyph in gate records)." .
+    rdfs:comment "The initiating node of a resonance sync (a SovereignSoliton, or a Glyph in gate records)." .
 
 dm:targetNode a owl:ObjectProperty ;
-    rdfs:domain dm:CoherenceLock ;
+    rdfs:domain dm:ResonanceSync ;
     rdfs:range dm:Glyph ;
-    rdfs:comment "The receiving node of a coherence lock (a SovereignSoliton, or a Glyph in gate records)." .
+    rdfs:comment "The receiving node of a resonance sync (a SovereignSoliton, or a Glyph in gate records)." .
 
 # =============================================================================
 ## 2. GLYPHIC LOGIC GATES (Execution Instances)
 #
 # To express the operations of the four core gates inside the triple store,
 # each gate is a named instance, and the state metrics of an operation
-# (like phase difference, dm:deltaTheta) ride on a CoherenceLock record.
+# (like phase difference, dm:deltaTheta) ride on a ResonanceSync record.
 # Append these semantic triples directly into a database to record active
 # transformations.
 # =============================================================================
@@ -181,7 +181,7 @@ dm:targetNode a owl:ObjectProperty ;
 # between input Glyphs falls within a clean harmonic set.
 # (Cleanup: the original annotated the gate's operatesOn statements in
 # RDF-star to carry each input's phase; the phases are recorded on the
-# glyphs for this evaluation, and the sync metric on a CoherenceLock.)
+# glyphs for this evaluation, and the sync metric on a ResonanceSync.)
 
 dm:Gate_AND_01 a dm:GlyphicGate ;
     dm:operatesOn dm:Glyph_Alpha ;
@@ -195,7 +195,7 @@ dm:Glyph_Alpha dm:harmonicSync dm:Glyph_Beta .
 
 # The operation records the deltaTheta metric on the lock relation;
 # the gate's own compilesTo (above) records the output, Soliton_Gamma.
-dm:Lock_Alpha_Beta a dm:CoherenceLock ;
+dm:Lock_Alpha_Beta a dm:ResonanceSync ;
     dm:sourceNode dm:Glyph_Alpha ;
     dm:targetNode dm:Glyph_Beta ;
     dm:deltaTheta 3.14159e0 .   # π difference (Harmonic Lock)

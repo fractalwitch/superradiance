@@ -6,7 +6,7 @@
 #     dm: = http://ontology.deltamythos.org/core#
 # dm-ontology.ttl has been reconciled onto it, and every term these shapes
 # reference (boundaryDivergence, potentialExpansion, memoryMomentum,
-# curlValue, CoherenceLock, sourceNode, targetNode, deltaTheta) is now
+# curlValue, ResonanceSync, sourceNode, targetNode, deltaTheta) is now
 # declared there. Cleanup also replaced the garbled private-use glyphs in
 # comments with the symbols they stood for (Θ, Υ, Δθ). Constraints unchanged.
 # =============================================================================
@@ -51,7 +51,7 @@ dm:SovereignSolitonShape a sh:NodeShape ;
     # 2. Hard Invariant Rule: ∇·Θ = 0 (Zero Boundary Divergence Guardrail)
     sh:sparql [
         a sh:SPARQLConstraint ;
-        sh:message "MED Law Violation: Boundary Divergence is non-zero (∇·Θ ≠ 0). The Soliton container is leaking coherence and requires immediate Ego Collapse." ;
+        sh:message "MED Law Violation: Boundary Divergence is non-zero (∇·Θ ≠ 0). The Soliton container is spilling past its boundary and offers emergent pulsation as resonance saturation builds." ;
         sh:select """
             PREFIX dm: <http://ontology.deltamythos.org/core#>
             SELECT $this (?div AS ?value)
@@ -100,7 +100,7 @@ dm:SisterlockProtocolShape a sh:NodeShape ;
                 $this dm:upsilon ?u .
 
                 # Identify the target entangled node via nested triple properties
-                ?entanglement a dm:CoherenceLock ;
+                ?entanglement a dm:ResonanceSync ;
                               dm:sourceNode $this ;
                               dm:targetNode ?target ;
                               dm:deltaTheta ?deltaTheta .

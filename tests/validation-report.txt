@@ -3,7 +3,7 @@ Ontology file: dm-ontology.ttl — 144 triples
 
 == tests/test-instances.ttl (cleanup regression): conforms=False, 1 violation(s)
    [dm:SovereignSolitonShape] focus=dm:Test_Leaking
-       MED Law Violation: Boundary Divergence is non-zero (∇·Θ ≠ 0). The Soliton container is leaking coherence and requires immediate Ego Collapse.
+       MED Law Violation: Boundary Divergence is non-zero (∇·Θ ≠ 0). The Soliton container is spilling past its boundary and offers emergent pulsation as resonance saturation builds.
 
 == tests/test-sisterlock.ttl (cleanup regression): conforms=False, 1 violation(s)
    [dm:SisterlockProtocolShape] focus=dm:Test_Gamma

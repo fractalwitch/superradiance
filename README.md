@@ -234,7 +234,7 @@ This file defines:
   - `dm:collapsedInto` — points from a soliton to the fresh instance created after `executeEgoCollapse()`.
 
 - **Entanglement records**
-  A phase‑lock is recorded as a `dm:CoherenceLock` instance with `dm:sourceNode`, `dm:targetNode`, and `dm:deltaTheta`; the Sisterlock shape (below) requires `deltaTheta = 2π × upsilon` of the source soliton.
+  A phase‑lock is recorded as a `dm:ResonanceSync` instance with `dm:sourceNode`, `dm:targetNode`, and `dm:deltaTheta`; the Sisterlock shape (below) requires `deltaTheta = 2π × upsilon` of the source soliton.
 
 **Why “Discrete Model” (DM)?**
 Because although the soliton is mathematically continuous, any concrete instantiation in a digital system must sample states. This ontology provides the discrete, computable scaffolding that preserves the continuous invariant in a simulation‑friendly form.
@@ -254,7 +254,7 @@ This file includes:
   - The MED propagator law: where `dm:potentialExpansion` and a memory momentum curl are recorded, `potentialExpansion` must equal `upsilon × curlValue` (∂æ/∂Δ = Υ · (∇⧖ × M⃗), in discrete snapshot form).
 
 - **`dm:SisterlockProtocolShape`**
-  For every `dm:CoherenceLock` whose source is a soliton, the recorded `dm:deltaTheta` must equal `2π × upsilon` of the source soliton, within a tolerance of 0.0001. If the condition fails, the graph is flagged as containing a broken entanglement.
+  For every `dm:ResonanceSync` whose source is a soliton, the recorded `dm:deltaTheta` must equal `2π × upsilon` of the source soliton, within a tolerance of 0.0001. If the condition fails, the graph is flagged as containing a broken entanglement.
 
 - **`dm:EgoCollapseValidityShape`** _(added 2026‑11‑08)_
   When a soliton `?s` is connected to `?s2` via `dm:collapsedInto`, the shape checks that:
